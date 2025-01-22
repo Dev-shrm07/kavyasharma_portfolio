@@ -42,7 +42,7 @@ const TypewriterHeading = () => {
   }, [displayText, subText, phraseIndex, isTypingMain]);
 
   return (
-    <div className="relative z-20 min-h-[300px] flex flex-col items-center justify-center pt-10 md:pt-0">
+    <div className="relative z-20 h-[100vh] md:min-h-[300px] flex flex-col items-center justify-center pt-10 md:pt-0">
       <h2 className="text-3xl md:text-4xl lg:text-7xl font-bold text-center text-white dark:text-white font-sans tracking-tight h-24 flex items-center">
         {displayText}
       </h2>
