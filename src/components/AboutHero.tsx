@@ -91,11 +91,11 @@ const AboutHero = () => {
           custom={2}
           className="text-lg text-neutral-400 text-center md:text-start"
         >
-          I enjoy optimizing models, making data pipelines, designing 
+          I enjoy optimizing models, implementing research papers, making data pipelines, designing 
           APIs, or building full-stack applications, Along with exploring applications of ML in different research areas.
         </motion.p>
 
-        <motion.p
+        {/* <motion.p
           initial="hidden"
           animate="visible"
           variants={textVariants}
@@ -103,7 +103,7 @@ const AboutHero = () => {
           className="text-lg text-neutral-400 text-center md:text-start"
         >
          I'm passionate about working with foundational models, building tools from scratch, implementing research papers, and developing intelligent text analysis solutions for real life use cases.
-        </motion.p>
+        </motion.p> */}
 
         <motion.p 
           initial="hidden"

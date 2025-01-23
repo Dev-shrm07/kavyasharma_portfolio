@@ -2,10 +2,32 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolling, setScrolling] = useState(false);
+  const router = useRouter()
+
+  const navHome = ()=>{
+    router.push('/')
+  }
+
+  const navAbout = () =>{
+    router.push('/about')
+  }
+
+  const navExperience = ()=>{
+    router.push('/experience')
+  }
+
+  const navProjects = () =>{
+    router.push('/projects')
+  }
+
+  const navContact = () =>{
+    router.push('/contact')
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -32,11 +54,11 @@ export default function Navbar() {
     >
       <div className=" justify-between items-center px-6 py-4 text-white hidden md:flex md:justify-between md:items-center">
         <div className="space-x-6 text-base font-light hidden md:flex">
-          <span className="hover:text-zinc-400 cursor-pointer">Home</span>
-          <span className="hover:text-zinc-400 cursor-pointer">Experience</span>
-          <span className="hover:text-zinc-400 cursor-pointer">About</span>
-          <span className="hover:text-zinc-400 cursor-pointer">Projects</span>
-          <span className="hover:text-zinc-400 cursor-pointer">Contact</span>
+          <span className="hover:text-zinc-400 cursor-pointer" onClick={navHome}>Home</span>
+          <span className="hover:text-zinc-400 cursor-pointer" onClick={navExperience}>Experience</span>
+          <span className="hover:text-zinc-400 cursor-pointer" onClick={navAbout}>About</span>
+          <span className="hover:text-zinc-400 cursor-pointer" onClick={navProjects}>Projects</span>
+          <span className="hover:text-zinc-400 cursor-pointer" onClick={navContact}>Contact</span>
         </div>
 
         <div className="hidden md:flex space-x-6 ml-6">
@@ -81,13 +103,13 @@ export default function Navbar() {
             ✖
           </button>
           <div className="flex flex-col space-y-4">
-            <span className="hover:text-zinc-400 cursor-pointer">Home</span>
-            <span className="hover:text-zinc-400 cursor-pointer">
+            <span className="hover:text-zinc-400 cursor-pointer" onClick={navHome}>Home</span>
+            <span className="hover:text-zinc-400 cursor-pointer" onClick={navExperience}>
               Experience
             </span>
-            <span className="hover:text-zinc-400 cursor-pointer">About</span>
-            <span className="hover:text-zinc-400 cursor-pointer">Projects</span>
-            <span className="hover:text-zinc-400 cursor-pointer">Contact</span>
+            <span className="hover:text-zinc-400 cursor-pointer" onClick={navAbout}>About</span>
+            <span className="hover:text-zinc-400 cursor-pointer" onClick={navProjects}>Projects</span>
+            <span className="hover:text-zinc-400 cursor-pointer" onClick={navContact}>Contact</span>
           </div>
           <div className="flex space-x-6 mt-4">
             <a href="https://www.github.com/Dev-shrm07" target="_blank">
