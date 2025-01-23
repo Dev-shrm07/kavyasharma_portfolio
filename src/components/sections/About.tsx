@@ -1,8 +1,10 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { Button } from "../ui/button";
+import { useRouter } from "next/navigation";
 
 const HeroSection: React.FC = () => {
+  const router = useRouter()
   return (
     <section className="relative w-full min-h-[90vh] py-16 flex flex-col items-center justify-center text-center px-6 bg-gradient-to-l from-neutral-900 to-black text-white space-y-14 overflow-hidden">
     
@@ -24,7 +26,7 @@ const HeroSection: React.FC = () => {
         Natural Language Processing, Cloud, and solving real-world problems.
       </p>
 
-      <Button className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black mt-15 relative z-10">
+      <Button className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black mt-15 relative z-10" onClick={()=>{router.push('/about')}}>
         Learn more about me
       </Button>
     </section>

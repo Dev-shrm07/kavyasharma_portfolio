@@ -1,7 +1,9 @@
+"use client"
 import React from "react";
 import HProjectCard from "../HProjectcard";
 import { Button } from "../ui/button";
 import { motion } from "framer-motion";
+import { useRouter } from 'next/navigation';
 
 interface HCardProps {
     image: string;
@@ -13,6 +15,10 @@ interface HCardProps {
 }
 
 const HomeProject = () => {
+    const router = useRouter()
+    const handleRoute = () =>{
+        router.push('/projects')
+    }
     const Projects: HCardProps[] = [{
         title: "SkyNetMEC",
         image: "/images/skynet.png",
@@ -72,7 +78,7 @@ const HomeProject = () => {
                     </motion.div>
                 ))}
             </motion.div>
-            <Button className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40 hover:text-white mt-10">
+            <Button className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40 hover:text-white mt-10" onClick={handleRoute}>
                 See More ➜
             </Button>
         </div>

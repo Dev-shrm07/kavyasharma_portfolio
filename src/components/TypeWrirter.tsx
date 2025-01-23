@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Button } from "./ui/button";
+import { useRouter } from "next/navigation";
 
 const TypewriterHeading = () => {
   const [displayText, setDisplayText] = useState("");
@@ -8,6 +9,7 @@ const TypewriterHeading = () => {
   const phrases = ["Data Scientist", "Software Engineer"];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isTypingMain, setIsTypingMain] = useState(true);
+  const router = useRouter()
 
   useEffect(() => {
     if (isTypingMain) {
@@ -62,10 +64,10 @@ const TypewriterHeading = () => {
       </div>
       <div className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-9 space-y-9 md:space-y-0">
         {" "}
-        <Button className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black">
+        <Button className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black" onClick={()=>{router.push('/contact')}}>
           Contact
         </Button>
-        <Button className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40  hover:text-white">
+        <Button className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40  hover:text-white" onClick={()=>{router.push('/projects')}}>
           Projects
         </Button>
       </div>
