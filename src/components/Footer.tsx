@@ -12,7 +12,7 @@ const Footer = () => {
         </p>
       </div>
       <div className="flex flex-col space-y-2">
-        <h3 className="text-xl">Let's Connect</h3>
+        <h3 className="text-xl">Let&apos;s Connect</h3>
         <div className="flex space-x-6">
           <a href="https://www.github.com/Dev-shrm07" target="_blank" rel="noopener noreferrer">
             <img

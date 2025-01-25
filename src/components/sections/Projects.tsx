@@ -5,7 +5,7 @@ import HProjectCard from "../ProjectCardAc";
 import { Projects } from "@/data/projects";
 
 const Project = () => {
-  const [projects, setProjects] = useState(Projects);
+  const projects = Projects
   const [filteredProjects, setFilteredProjects] = useState(Projects);
   const [filter, setFilter] = useState("");
 
@@ -17,18 +17,7 @@ const Project = () => {
     setFilteredProjects(newProjects);
   }, [filter]);
 
-  const textVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (custom: any) => ({
-      opacity: 1,
-      y: 0,
-      transition: {
-        delay: custom * 0.3,
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    }),
-  };
+  
 
   return (
     <div className="flex flex-col min-h-[100vh] w-full bg-neutral-950 space-y-5 px-5  pb-10 justify-center  py-20">

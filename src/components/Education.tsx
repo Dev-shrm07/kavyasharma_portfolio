@@ -1,10 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 const Education = () => {
-  const containerVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0 },
-  };
+  
   return (
     <motion.div
       className="flex flex-col bg-gradient-to-r from-neutral-950 to-neutral-800 border border-white/20 shadow-lg shadow-white/30 min-h-[250px] w-[90%] mt-20 px-6 py-6"
@@ -27,7 +24,7 @@ const Education = () => {
       {/* University & Degree on Left, Year on Right */}
       <div className="flex flex-col md:flex-row  md:justify-between md:items-center w-full text-white text-lg font-bold mb-5">
         <div className="text-center md:text-left">
-          Delhi Technological University: Bachelor's of Technology, Engineering
+          Delhi Technological University: Bachelor&apos;s of Technology, Engineering
           Physics
         </div>
         <div className=" text-center md:text-right">2020-2024</div>

@@ -47,9 +47,9 @@ const Page = () => {
   return (
     <div className="bg-neutral-950 min-h-screen w-full flex flex-col p-10 items-center">
       <div className="flex flex-col space-y-4 w-[90%] md:w-[50%] mt-20">
-        <h1 className="text-3xl text-white">Let's Connect!</h1>
+        <h1 className="text-3xl text-white">Let&apos;s Connect!</h1>
         <p className="text-lg text-neutral-500">
-          Any questions or want to get in touch? Fill out the form, and we'll
+          Any questions or want to get in touch? Fill out the form, and I&apos;ll
           get back to you!
         </p>
       </div>
