@@ -2,7 +2,6 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import HProjectCard from "../ProjectCardAc";
-import { motion } from "framer-motion";
 import { Projects } from "@/data/projects";
 
 const Project = () => {

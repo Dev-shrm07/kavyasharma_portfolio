@@ -2,7 +2,6 @@
 import Cbre from "@/components/icons/cbre";
 import Iit from "@/components/icons/iit";
 
-import React from "react";
 
 export const Experiences = [
   {

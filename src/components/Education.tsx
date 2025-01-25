@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { once } from "events";
 const Education = () => {
   const containerVariants = {
     hidden: { opacity: 0, y: -20 },

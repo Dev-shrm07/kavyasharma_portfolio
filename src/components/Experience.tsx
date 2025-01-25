@@ -4,9 +4,7 @@ import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
-import Image from "next/image";
 
-import Cbre from "./icons/cbre";
 
 import "react-vertical-timeline-component/style.min.css";
 import { Experiences as experiences } from "@/data/experience";
