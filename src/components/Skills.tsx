@@ -67,7 +67,7 @@ const Skills = () => {
     <motion.div
       className="flex flex-col bg-gradient-to-r from-neutral-950 to-neutral-800 border border-white/20 shadow-lg shadow-white/30 min-h-[350px] w-[90%] mt-20 px-6 py-6"
       initial={{ x: "-100%" }}
-      animate={{ x: "0%" }}
+      whileInView={{ x: "0%" }}
       transition={{ duration: 1.5 }}
       viewport={{ once: true }}
     >
