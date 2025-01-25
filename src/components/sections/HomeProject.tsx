@@ -29,7 +29,7 @@ const HomeProject = () => {
     {
         title: "PixelStore",
         image: "/images/pixelstore.png",
-        desc: "An online peer-to-peer marketplace for stock images, built wiht Stripe integration. Where, users can buy and sell images directly with each other, with features such as account creation, profile editing, buying and creating posts, and more",
+        desc: "An online peer-to-peer marketplace for stock images, built with Stripe integration. Where, users can buy and sell images directly with each other, with features such as account creation, profile editing, buying and creating posts, and more",
         skills: ["React.js", "Node.js", "Typescript", "MongoDB", "Stripe.js", "Express.js"],
         github: "https://github.com/Dev-shrm07/Pixel-Store-Frontend",
         liveUrl: "https://pixelstore.pics/"
