@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-
+import Image from "next/image"
 interface HCardProps {
   image: string;
   title: string;
@@ -13,7 +13,7 @@ const HProjectCard = ({ image, title, desc, skills, github, liveUrl }: HCardProp
   return (
     <div className="bg-zinc-900 h-650px md:h-[500px] w-[280px] md:w-[350px] border-[0.05px] border-neutral-700 rounded-md shadow-sm overflow-hidden flex flex-col">
       <div className="h-[220px] overflow-hidden">
-        <img
+        <Image
           src={image}
           alt={`${title} preview`}
           className="w-full h-full cursor-pointer object-cover rounded-t-md transition-transform duration-300 ease-in-out transform hover:scale-110"

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const AboutHero = () => {
   const textVariants = {
@@ -53,7 +54,7 @@ const AboutHero = () => {
         variants={imageVariants}
         className="w-full md:w-[40%] hidden md:block"
       >
-        <img
+        <Image
           src="/images/about.png"
           alt="Kavya Sharma"
           className="h-full w-full object-cover"
