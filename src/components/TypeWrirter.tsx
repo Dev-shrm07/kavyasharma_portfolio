@@ -9,7 +9,8 @@ const TypewriterHeading = () => {
   const phrases = ["Data Scientist", "Software Engineer"];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isTypingMain, setIsTypingMain] = useState(true);
-  const router = useRouter()
+  const [showButtons, setShowButtons] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     if (isTypingMain) {
@@ -39,6 +40,12 @@ const TypewriterHeading = () => {
           setSubText("");
         }, 500);
         return () => clearTimeout(timeout);
+      } else {
+        // When all text typing is complete, show buttons
+        const timeout = setTimeout(() => {
+          setShowButtons(true);
+        }, 500);
+        return () => clearTimeout(timeout);
       }
     }
   }, [displayText, subText, phraseIndex, isTypingMain]);
@@ -62,12 +69,21 @@ const TypewriterHeading = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-9 space-y-9 md:space-y-0">
-        {" "}
-        <Button className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black" onClick={()=>{router.push('/contact')}}>
+      <div
+        className={`flex flex-col md:flex-row md:space-x-4 mt-4 md:mt-9 space-y-9 md:space-y-0 transition-all duration-500 ease-in-out ${
+          showButtons ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        }`}
+      >
+        <Button
+          className="bg-white w-40 md:w-60 text-black px-8 font-bold text-[14px] hover:bg-neutral-300 hover:bg-opacity-90 hover:text-black"
+          onClick={() => router.push("/contact")}
+        >
           Contact
         </Button>
-        <Button className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40  hover:text-white" onClick={()=>{router.push('/projects')}}>
+        <Button
+          className="bg-neutral-700 bg-opacity-55 w-40 md:w-60 text-white px-8 font-bold text-[14px] hover:bg-opacity-40 hover:text-white"
+          onClick={() => router.push("/projects")}
+        >
           Projects
         </Button>
       </div>
