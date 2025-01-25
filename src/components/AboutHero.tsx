@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const AboutHero = () => {
   const textVariants = {
     hidden: { opacity: 0, y: 20 },
-    visible: (custom: any) => ({
+    visible: (custom: number) => ({
       opacity: 1,
       y: 0,
       transition: {

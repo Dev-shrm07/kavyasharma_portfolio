@@ -13,7 +13,7 @@ import { Experiences as experiences } from "@/data/experience";
 interface ExperienceTypes {
   title: string;
   company_name: string;
-  icon?: any;
+  icon?: React.FC
   iconBg: string;
   date: string;
   points: string[];
@@ -30,7 +30,7 @@ function ExperienceCard({ experience }: { experience: ExperienceTypes }) {
       }}
       contentArrowStyle={{ borderRight: "7px solid #fff" }}
       date={experience.date}
-      icon={<experience.icon/>}
+      icon={experience.icon ? <experience.icon /> : null}
       dateClassName="rounded-md"
       iconStyle={{
         background: experience.iconBg,
