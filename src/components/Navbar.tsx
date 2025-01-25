@@ -65,19 +65,19 @@ export default function Navbar() {
           <a href="https://www.github.com/Dev-shrm07" target="_blank">
             <img
               src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF"
-              className="w-6 h-6 hover:scale-125 cursor-pointer"
+              className="w-6 h-6 hover:scale-125 cursor-pointer" alt="github"
             />
           </a>
           <a href="https://www.linkedin.com/in/kavyash71102/" target="_blank">
             <img
               src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF"
-              className="w-6 h-6 hover:scale-125 cursor-pointer"
+              className="w-6 h-6 hover:scale-125 cursor-pointer" alt="linkedin"
             />
           </a>
           <a href="https://x.com/kshrm02" target="_blank">
             <img
               src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=FFFFFF"
-              className="w-6 h-6 hover:scale-125 cursor-pointer"
+              className="w-6 h-6 hover:scale-125 cursor-pointer" alt="twitter"
             />
           </a>
         </div>
@@ -115,19 +115,19 @@ export default function Navbar() {
             <a href="https://www.github.com/Dev-shrm07" target="_blank">
               <img
                 src="https://img.icons8.com/?size=100&id=3tC9EQumUAuq&format=png&color=FFFFFF"
-                className="w-6 h-6 hover:scale-125 cursor-pointer"
+                className="w-6 h-6 hover:scale-125 cursor-pointer" alt="github"
               />
             </a>
             <a href="https://www.linkedin.com/in/kavyash71102/" target="_blank">
               <img
                 src="https://img.icons8.com/?size=100&id=98960&format=png&color=FFFFFF"
-                className="w-6 h-6 hover:scale-125 cursor-pointer"
+                className="w-6 h-6 hover:scale-125 cursor-pointer" alt="linkedin"
               />
             </a>
             <a href="https://x.com/kshrm02" target="_blank">
               <img
                 src="https://img.icons8.com/?size=100&id=A4DsujzAX4rw&format=png&color=FFFFFF"
-                className="w-6 h-6 hover:scale-125 cursor-pointer"
+                className="w-6 h-6 hover:scale-125 cursor-pointer" alt="twitter"
               />
             </a>
           </div>
