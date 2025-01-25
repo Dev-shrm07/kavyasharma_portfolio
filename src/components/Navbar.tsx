@@ -9,22 +9,27 @@ export default function Navbar() {
   const router = useRouter()
 
   const navHome = ()=>{
+    setIsOpen(false)
     router.push('/')
   }
 
   const navAbout = () =>{
+    setIsOpen(false)
     router.push('/about')
   }
 
   const navExperience = ()=>{
+    setIsOpen(false)
     router.push('/experience')
   }
 
   const navProjects = () =>{
+    setIsOpen(false)
     router.push('/projects')
   }
 
   const navContact = () =>{
+    setIsOpen(false)
     router.push('/contact')
   }
 
