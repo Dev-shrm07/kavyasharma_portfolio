@@ -92,7 +92,7 @@ const Skills = () => {
         </ul>
         <ul>
           <span className="text-gray-300">DevOps and MLOps:</span>
-          &nbsp;&nbsp;&nbsp;&nbsp;Azure DevOps, AWS, Docker, Dataiku, MLflow
+          &nbsp;&nbsp;&nbsp;&nbsp;Azure, AWS, Docker, Dataiku, MLflow
         </ul>
       </div>
       <SkillsIconFlow/>
