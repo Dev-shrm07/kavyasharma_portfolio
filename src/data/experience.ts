@@ -13,7 +13,7 @@ export const Experiences = [
       "Developed predictive deal model using Bayesian networks and comparative analysis techniques, leveraging input parameters like location, term, year, size, building class, lease type, and usage type to forecast critical rental attributes (starting rent, TI allowances, free rent months).",
       "Created an opportunity spotting model predicting lease opportunities (in terms of net savings) by analyzing end date, lease date, headcount, target headcount, size, capital, and market rent ratio.",
       "Implemented end-to-end data science workflow, from data ingestion and cleaning to model development, deployment, and production implementation.",
-      "Deployed these models as scalable FastAPI applications on AWS EC2 to support the portfolio optimization application managing real estate portfolios for multiple clients.",
+      "Deployed these models as scalable FastAPI applications, to support the portfolio optimization application managing real estate portfolios for multiple clients.",
       "Designed and implemented a comprehensive data pipeline for the Vendor Finance Reporting (VFR) project, transferring data from staging environments to Snowflake tables and implementing automated email-sending tasks triggered by Snowflake data conditions.",
     ],
     iconBg: "#fff",
