@@ -6,7 +6,7 @@ const TypewriterHeading = () => {
   const [displayText, setDisplayText] = useState("");
   const [subText, setSubText] = useState("");
   const mainText = "Hi, I'm Kavya Sharma!";
-  const phrases = ["Data Scientist", "Software Engineer"];
+  const phrases = ["Software Engineer"];
   const [phraseIndex, setPhraseIndex] = useState(0);
   const [isTypingMain, setIsTypingMain] = useState(true);
   const [showButtons, setShowButtons] = useState(false);
