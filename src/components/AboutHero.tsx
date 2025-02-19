@@ -79,8 +79,8 @@ const AboutHero = () => {
           custom={1}
           className="text-lg text-neutral-400 text-center md:text-start"
         >
-          Hi, I&apos;m Kavya Sharma, a Software Engineer with expertise in Data 
-          Science, Machine Learning, and Predictive Modeling. With 1 year of 
+          Hi, I&apos;m Kavya Sharma, a Software Engineer with experience building full stack applications, 
+          Machine Learning, and natural language processing. With 1 year of 
           experience, I have worked on developing intelligent systems, building 
           scalable applications, and solving complex data-driven problems.
         </motion.p>
