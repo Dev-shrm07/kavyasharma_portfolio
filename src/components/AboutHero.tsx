@@ -79,10 +79,10 @@ const AboutHero = () => {
           custom={1}
           className="text-lg text-neutral-400 text-center md:text-start"
         >
-          Hi, I&apos;m Kavya Sharma, a Software Engineer with experience in web development,
-          Machine Learning, and natural language processing. With 1 year of 
-          experience, I have worked on developing intelligent systems, building 
-          scalable applications, and solving complex data-driven problems.
+          Hi, I&apos;m Kavya Sharma, a Software Engineer with experience in web development and
+          Machine Learning. With 1 year of 
+          experience, I have worked on Predictive modelling, Natural Language Processing, building 
+          scalable backend applications, and solving complex data-driven problems.
         </motion.p>
 
         <motion.p
