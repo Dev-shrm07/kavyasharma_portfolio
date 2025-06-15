@@ -41,6 +41,19 @@ export const Projects: HCardProps[] = [
     type: "ml",
   },
   {
+    title: "CacheBase",
+    image: "/images/cachebase.png",
+    desc: "CacheBase is a high-performance, Redis-compatible distributed key-value store with built-in Raft consensus for strong consistency and fault tolerance. It supports streams, concurrent clients, TTL, and persistent storage — all with native support for blocking reads and cluster-safe operations. Designed for high availability and developer-friendly usage, it's perfect for real-time distributed systems.",
+    skills : [
+      "Python",
+      "RPC",
+      "TCP",
+      "Distributed Systems" 
+    ],
+    github: "https://github.com/Dev-shrm07/CacheBase",
+    type:"wd"
+  },
+  {
     title: "PixelStore",
     image: "/images/pixelstore.png",
     desc: "An online peer-to-peer marketplace for stock images, built wiht Stripe integration. Where, users can buy and sell images directly with each other, with features such as account creation, profile editing, buying and creating posts, and more",
