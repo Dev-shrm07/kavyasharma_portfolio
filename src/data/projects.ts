@@ -48,6 +48,8 @@ export const Projects: HCardProps[] = [
       "Python",
       "RPC",
       "TCP",
+      "Key Value Store",
+      "Redis",
       "Distributed Systems" 
     ],
     github: "https://github.com/Dev-shrm07/CacheBase",
