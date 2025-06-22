@@ -28,7 +28,7 @@ export const Projects: HCardProps[] = [
   {
     title: "SkyNetMEC",
     image: "/images/skynet.png",
-    desc: "An autonomous UAV-based Multi Edge Computing model built using the MADDPG algorithm for task offloading and trajectory planning. It optimizes task execution by UAVs in a custom environment with UE clusters and fog devices.",
+    desc: "An autonomous UAV-based Multi Edge Computing model built using the MADDPG algorithm for task offloading and trajectory planning. It optimizes task execution by UAVs in a custom environment with UE clusters and fog devices, deployed as an open source repo with 110+ stars and counting.",
     skills: [
       "Reinforcement Learning",
       "Tensorflow",
