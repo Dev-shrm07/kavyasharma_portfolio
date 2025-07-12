@@ -58,7 +58,7 @@ export const Projects: HCardProps[] = [
    {
     title: "End-to-End MLOps Pipeline – Flight Fare Prediction",
     image: "/images/mlops.png",
-    desc: "An end-to-end Machine Learning and Data Engineering pipeline for flight fare prediction, featuring modular components for data ingestion, preprocessing, model training, and artifact management. The pipeline is orchestrated using Apache Airflow, with experiment tracking through MLflow and real-time inference served via a FastAPI endpoint. The entire system is Dockerized and deployed on AWS EC2 and S3, with automated CI/CD workflows set up using GitHub Actions for seamless updates and scalability.",
+    desc: "An end-to-end Machine Learning and Data Engineering pipeline for flight fare prediction, featuring modular components for data ingestion, preprocessing, model training, and artifact management. The pipeline is orchestrated using Apache Airflow, with experiment tracking through MLflow and real-time inference served via a FastAPI endpoint.",
     skills : [
       "Python",
       "Airflow",
