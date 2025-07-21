@@ -9,13 +9,13 @@ export const Experiences = [
     company_name: "CBRE Asia Pacific",
     date: "Jun 2024 - Present",
     icon: Cbre,
-    points: [
-      "Developed predictive deal model using Bayesian networks and comparative analysis techniques, leveraging input parameters like location, term, year, size, building class, lease type, and usage type to forecast critical rental attributes (starting rent, TI allowances, free rent months).",
-      "Created an opportunity spotting model predicting lease opportunities (in terms of net savings) by analyzing end date, lease date, headcount, target headcount, size, capital, and market rent ratio.",
-      "Implemented end-to-end data science workflow, from data ingestion and cleaning to model development, deployment, and production implementation.",
-      "Deployed these models as scalable FastAPI applications, to support the portfolio optimization application managing real estate portfolios for multiple clients.",
-      "Designed and implemented a comprehensive data pipeline for the Vendor Finance Reporting (VFR) project, transferring data from staging environments to Snowflake tables and implementing automated email-sending tasks triggered by Snowflake data conditions.",
-    ],
+    points: ["Developed multiple robust microservices and RESTful APIs powering core internal tools, including rent prediction, opportunity spotting, cashflow simulation, portfolio enrichment and commission modelling, handling 400,000+ monthly requests with high availability.",
+"Built an enterprise agentic AI platform using LangChain, LangGraph, and GPT-4o reasoning models. Developed a modular multi-agent system delivered as an API with real-time chat functionality via WebSocket implementation that integrates with existing microservices to provide strategic recommendations for portfolio optimization, reducing manual analysis time by 70%.",
+"Developed a Transaction Optimization platform with a React.js frontend built on clean architecture principles, ensuring modularity and maintainability. Implemented SSO authentication, intuitive portfolio management workflows, and a seamless user experience. Developed Backend using FastAPI integrating internal cashflow microservices and optimized Snowflake schemas for portfolios, rent schedules, cashflow tables, and related metadata.",
+"Led end-to-end development of Rent Buddy, an end-to-end system for rent and lease attributes prediction, including data pipelines ingesting from 10+ sources, designed modular Snowflake schemas, trained predictive models, and built performant APIs; improved accuracy by 54% and reduced API latency by 80% using vectorized operations, geospatial indexing and caching using Redis.",
+"Developed a high-availability portfolio enrichment service that processes client portfolios to return enriched property metadata and tenant lease information, utilizing similarity search and address standardization algorithms along  with other services; adopted by the Advisory & Transactions team for Fortune 500 client accounts.",
+"Implemented software engineering best practices including clean code principles, maintainable architecture, comprehensive unit and integration test coverage, Docker containerization, and Agile development methodologies ensuring high code quality, system reliability, and team productivity across all projects."]
+,
     iconBg: "#fff",
   },
   {
